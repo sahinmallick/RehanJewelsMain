@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* nav1 */
 .contact-info{
     font-size: 15px;
     padding: 0.1rem;
@@ -6,13 +11,123 @@
     height: 40px;
 }
 .fa-store{
-    padding-left: 2rem;
+    padding-left: 1rem;
 }
 .logo{
    display: flex;
   position: absolute;
-  left:35%;
-  width: 10rem;
-  height: 12rem;
-  margin: 1rem;
+  left: 41%;
+  width: 8rem;
+  height: 3.01rem;
+  margin: 0;
+
 }
+/* Search Bar */
+.search-box {
+    width: 12rem;
+    height: 2rem;
+    position: relative;
+    display: flex;
+      left: 20%;
+      margin: 0;
+  }
+  
+  .search-input {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 15px 45px 15px 15px;
+    background-color: #f2f2f9;
+    color: #202020;
+    border-radius: 20px;
+    border:none;
+    transition: all .4s;
+  }
+  
+  /* .search-input:focus {
+    border:none;
+    outline:none;
+    box-shadow: 0 1px 12px #b8c6db;
+    -moz-box-shadow: 0 1px 12px #b8c6db;
+    -webkit-box-shadow: 0 1px 12px #b8c6db;
+  } */
+  
+  .search-btn {
+    background-color: transparent;
+    font-size: 18px;
+    padding: 6px 9px;
+    margin-left:-45px;
+    border:none;
+    color: #171717;
+    transition: all .4s;
+    z-index: 10;
+  }
+  
+  .search-btn:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    color: #DFBD69;
+  }
+  
+  /* .search-btn:focus {
+    outline:#DFBD69;
+    color:#DFBD69;
+  } */
+/* right nav */
+.fa-user{
+    padding-left: 1rem;
+}
+
+/*nav2 */
+.secondnav{
+    height: 2rem;
+}
+.secondnav ul{
+    text-align: center;
+}
+.secondnav li{
+    display: inline-block;
+    margin: 0.2rem;
+    list-style: none;
+    height: 2rem;
+    line-height: 2rem;
+    padding: 0;
+}
+/* .secondnav li:hover {
+    background: #DFBD69;
+    transition: background .3s;
+  } */
+  /* Add these styles for navbar items underline and transition */
+.secondnav li a {
+    position: relative;
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s, border-bottom-width 0.3s;
+  }
+  
+  .secondnav li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #DFBD69;
+    transition: width 0.3s;
+  }
+  
+  .secondnav li a:hover,
+  .secondnav li a:focus {
+    color: #DFBD69; /* Adjust the color as desired */
+    border-bottom-width: 2px;
+  }
+  
+  .secondnav li a:hover::after,
+  .secondnav li a:focus::after {
+    width: 100%;
+  }
+  
+.nav-link {
+    color: #000000;
+    text-decoration: none;
+  }
